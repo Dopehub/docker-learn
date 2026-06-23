@@ -1,5 +1,7 @@
 FROM debian:stable-slim
 
-#execute the echo hello world command when the container runs
+#copy source dest
+COPY docker-learn /bin/docker-learn
 
-CMD ["echo", "hello world"]
+
+CMD ["/bin/docker-learn"]
